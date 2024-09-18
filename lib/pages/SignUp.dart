@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:tugas1/pages/SignIn.dart'; // Pastikan import ini ada
 
 class SignUpScreen extends StatelessWidget {
   @override
@@ -72,7 +73,13 @@ class SignUpScreen extends StatelessWidget {
               ),
               SizedBox(height: 20),
               ElevatedButton(
-                onPressed: () {},
+                onPressed: () {
+                  // Navigasi ke halaman SignIn
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => SignInScreen()),
+                  );
+                },
                 child: Text('Sign Up'),
                 style: ElevatedButton.styleFrom(
                   backgroundColor: Colors.red,

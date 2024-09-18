@@ -66,7 +66,7 @@ class SignInScreen extends StatelessWidget {
               ElevatedButton(
                 onPressed: () {
                   Navigator.pop(
-                      context); // Kembali ke halaman sebelumnya (SignUpScreen)
+                      context); // Kembali ke halaman sebelumnya (SignUp)
                 },
                 child: Text('Back to Sign Up'),
                 style: ElevatedButton.styleFrom(
